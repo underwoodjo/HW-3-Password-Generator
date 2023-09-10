@@ -9,10 +9,10 @@ function generatePassword() {
  if (passwordLength <8) {
   alert ("Please enter a number between 8 and 28");
   
- } else (passwordLength >28) {
+ } else (passwordLength >28) 
   alert ("Please enter a number between 8 and 28");
   
- }
+ 
 
  //add lowercase, uppercase, numbers, and special characters
  var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28'];
@@ -23,8 +23,7 @@ function generatePassword() {
  //Input should be validated
 
  //Display password to page
- //Display password to page
- return "generated password"
+ return "generated password";
 
 }
 // Write password to the #password input

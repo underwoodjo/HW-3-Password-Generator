@@ -4,14 +4,14 @@ var generateBtn = document.querySelector("#generate");
 function generatePassword() {
   console.log ("the button clicks")
 
- //Password length 8-28
- var passwordLength = prompt('Please choose a length of at least 8 characters and no more than 128 characters')
+ //Password length 8-128
+ var passwordLength = prompt('Please choose a number between 8 and 128')
  if (passwordLength <8) {
-  alert ("Please enter a number between 8 and 28");
+  alert ("Please enter a number between 8 and 128");
   
- } else (passwordLength >28) 
-  alert ("Please enter a number between 8 and 28");
-  
+ } else (passwordLength >128) 
+  alert ("Please enter a number between 8 and 128");
+ 
  
 
  //add lowercase, uppercase, numbers, and special characters

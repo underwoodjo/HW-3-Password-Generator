@@ -5,13 +5,8 @@ function generatePassword() {
   console.log ("the button clicks")
 
  //Password length 8-128
+ //Added promt if length of password does not fall with correct parameters
  var passwordLength = prompt('Please choose a number between 8 and 128')
- if (passwordLength <8) {
-  alert ("Please enter a number between 8 and 128");
-  
- } else (passwordLength >128) 
-  alert ("Please enter a number between 8 and 128");
- 
  
 
  //add lowercase, uppercase, numbers, and special characters
@@ -20,8 +15,13 @@ function generatePassword() {
  var lowercaseCharacters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
  var specialCharacters = ['!', '@', '#', '$','%', '^', '&', '*'];
 
+ //The user confirms if they want to use lowercase/uppercase/special characters
+ var uppercaseCharacters = confirm('Do you want to use uppercase characters?');
+ var lowercaseCharacters = confirm('Do you want to use lowercase characters?');
+ var specialCharacters = confirm('Do you want to use any special characters?');
+ 
  //Input should be validated
-
+ 
  //Display password to page
  return "generated password";
 
